@@ -3,25 +3,25 @@ OBJECTIVE: TO CHECK IF A SUBSEQUENCE IS PRESENT IN SEQUENCE OR NOT
 INPUT: SEQUENCE AND SUBSEQUENCE
 OUTPUT:RETURN IF SUBSEQUENCE IS FOUND OR NOT IN SEQUENCE
 */
-include <iostream>
+#include <iostream>
 #include<string>
 
 using namespace std;
-bool isSubSeq ( string SPrime ,string S)
+bool isSubSeq ( string sub ,string str)
 {
    int j = 0;
    int i;
-    for (  i=0;i< S.length() ; ++i )
+    for (  i=0;i< str.length() ; ++i )
     {
     	//if all letters of string SPrime is traversed 
-        if ( j == SPrime.length() )
+        if ( j == sub.length() )
             break;
-        if ( SPrime [ j ] == S [ i ])
+        if ( sub [ j ] ==str [ i ])
             ++j;
         
     }
     
-    if( j == SPrime.length() && j!=0)
+    if( j == sub.length() && j!=0)
     {   
         return true ;
     }
@@ -31,24 +31,21 @@ bool isSubSeq ( string SPrime ,string S)
     
 int main()
 {
-	string str1,str2; 
-      
-    cout << "Please enter subsequence S': \n"; 
-    getline (cin, str1); 
+    string subseq,seq; 
+    cout << "\n\tEnter subsequence:"; 
+    getline (cin, subseq); 		//inputting subsequence from user
+    cout << "\n\tEnter sequence:"; 
+    getline (cin, seq); 		//inputting sequence from user
     
-    cout << "Please enter sequence S: \n"; 
-    getline (cin, str2); 
-    
-    bool value=isSubSeq(str1, str2);
+    bool value=isSubSeq(subseq, seq);
     if(value==true)
     {
-    	cout<<"SPrime is a subsequence of S";
+    	cout<<"\n\tYes, subsequence is present in sequence";
     	
-	}
-	else
-	{
-		cout<<"SPrime is not a subsequence of S";
-	}
+     }
+     else
+     {
+	cout<<"\n\tNo, subsequence is not present in sequence";
+     }
     return 0; 
-
 }
