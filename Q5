@@ -1,4 +1,9 @@
-#include <iostream>
+/*
+OBJECTIVE: TO CHECK IF A SUBSEQUENCE IS PRESENT IN SEQUENCE OR NOT 
+INPUT: SEQUENCE AND SUBSEQUENCE
+OUTPUT:RETURN IF SUBSEQUENCE IS FOUND OR NOT IN SEQUENCE
+*/
+include <iostream>
 #include<string>
 
 using namespace std;
@@ -32,7 +37,7 @@ int main()
     getline (cin, str1); 
     
     cout << "Please enter sequence S: \n"; 
-    getline (cin, str); 
+    getline (cin, str2); 
     
     bool value=isSubSeq(str1, str2);
     if(value==true)
