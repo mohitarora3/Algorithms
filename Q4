@@ -46,7 +46,6 @@ int maximumRevenue(int total_miles, int site[], int revenue[], int n)
  
 int main() 
 { 
-	cout<<"\n\n\t\t\tBILLBOARD PROBLEM";
 	int i,n,total_miles;
 	int *site = new int[total_miles];
 	int *revenue = new int[total_miles];
@@ -58,7 +57,7 @@ int main()
 	i=0;
 	while(i<n)
 	{
-		cout<<"\nEntersite: ";
+		cout<<"\nEnter site number: ";
 		cin>>site[i];
 		++i;
 		
