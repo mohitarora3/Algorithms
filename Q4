@@ -1,5 +1,5 @@
 
-    //	Question no. : Program to calculate maximum revenue by placing a subset of billboard on the highway
+    //	Objective: To calculate maximum revenue by placing a subset of billboard on the highway
 
  
 #include<iostream> 
