@@ -1,5 +1,9 @@
 
-Question 8
+                                                      Algorithm Assignment (Section-B)
+          Submitted By:
+          1.Mohit Arora(22)
+          2.Deepak Yadav(10)
+                                                           Question no-8
 
 To minimize the cost, license with most expensive rate of growth must be bought first. The solution is to find maximum, then second maximum, then third maximum and so on. Since we are interested in immediate best choice, it is a greedy algorithm. It can be achieved by sorting the array which will take at best O(nlogn) [merge sort, heap sort]. We were given the flexibility to find solution in polynomial of n time. So, here is a more ituitive solution.
 
