@@ -1,5 +1,14 @@
-#include<iostream>
 
+/*
+                                                Algorithm Assignment (Section-B)
+          Submitted By:
+          1.Mohit Arora(22)
+          2.Deepak Yadav(10)
+          Question no-7
+                                                      Buy Sell Problem   
+                                                      
+                                                                                                            */
+#include<iostream>
 using namespace std; 
 
 struct transactionDates 
