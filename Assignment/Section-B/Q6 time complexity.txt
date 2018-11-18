@@ -1,0 +1,20 @@
+Question 6,
+
+Since, the approach followed is divide and conquer.
+
+Function divideInput(int *, int, int)
+Divides the input into equal halves.
+
+Function check(int, int *, int, int)
+Checks whether the element is in majority or not. It takes O(n) time.
+
+
+Let us denote the running time of the algorithm on array of size ‘n’, by T(n). 
+Then,
+
+T(n) is, 
+T(⌈n/2⌉) + T(⌊n/2⌋) +O(n),		if n>2
+O(1),		if n≤2
+
+The master theorem shows that T(n)=O(nlogn).
+
