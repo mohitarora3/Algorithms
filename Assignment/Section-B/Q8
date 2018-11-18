@@ -1,5 +1,14 @@
-using namespace std;
+
+/*
+                                                Algorithm Assignment (Section-B)
+          Submitted By:
+          1.Mohit Arora(22)
+          2.Deepak Yadav(10)
+          Question no-8
+                                                      Licence for Security Company   							*/
+                                                      
 #include<iostream>
+using namespace std;
 #include<vector>
 #include<algorithm>
 
