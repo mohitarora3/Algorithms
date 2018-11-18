@@ -1,5 +1,9 @@
-Question 7
-
+                   					 Algorithm Assignment (Section-B)
+          Submitted By:
+          1.Mohit Arora(22)
+          2.Deepak Yadav(10)
+          						Question no-7
+							
 We initialize minimum with first element of price array and the difference bewtween 2nd and 1st element to be the maximum difference. 
 After that, we iterate through the price array and update values of max_diff if any difference is more than current max_diff. 
 Similarly, the value of minimum is updated as we iterate across the array. The sell and buy date is recorded only when max_diff is updated and not when the minimum is updated, because of real-life possibilities (buy date has to come before sell date). The final maximum difference between buying price and selling price is used to return the optimum buy and sell date.
