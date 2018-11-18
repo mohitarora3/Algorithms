@@ -1,0 +1,21 @@
+
+Question 8
+
+To minimize the cost, license with most expensive rate of growth must be bought first. The solution is to find maximum, then second maximum, then third maximum and so on. Since we are interested in immediate best choice, it is a greedy algorithm. It can be achieved by sorting the array which will take at best O(nlogn) [merge sort, heap sort]. We were given the flexibility to find solution in polynomial of n time. So, here is a more ituitive solution.
+
+The approach is to find maximum of entire array, print the license number and swap it with the beginning of array. 
+
+Now, to find second maximum find the maximum of l_arr[2..n], since the first maximum is stored at location l_arr[1].
+Similarly find subsequent maximum and print it.
+Total no. of software license to buy = n
+
+The max_calc() function works in linear time, 
+line 1, 5-7 take constant time. 
+loop line 2-4 of function1 iterates n times.
+
+print_order() calls the function max_calc() n times, function2 line 1-2.
+
+Therefore, total time complexity is O(n2). 
+
+Time complexity:	O(n2)
+
